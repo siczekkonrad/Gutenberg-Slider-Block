@@ -1,0 +1,21 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+@import "../src/assets/fonts/work-sans/stylesheet.css";
+@import "../src/assets/fonts/eczar/stylesheet.css";
+
+$font-work-regular: "work_sansregular";
+$font-work-bold: "work_sanssemibold";
+
+$font-eczar-regular: "eczarregular";
+$font-eczar-bold: "eczarbold";
+
+@mixin textStyle($fs, $lh, $clr, $mb) {
+	font-size: $fs;
+	line-height: $lh;
+	color: $clr;
+	margin-bottom: $mb;
+}

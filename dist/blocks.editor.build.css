@@ -1,0 +1,35 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+@import url(../src/assets/fonts/work-sans/stylesheet.css);
+@import url(../src/assets/fonts/eczar/stylesheet.css);
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.wp-block-grf-gutenberg-adchitects-slider .slide {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 40px; }
+  .wp-block-grf-gutenberg-adchitects-slider .slideContent__title {
+    color: #fff;
+    font-size: 24px !important;
+    margin-bottom: 20px !important; }
+  .wp-block-grf-gutenberg-adchitects-slider .slideContent__subtitle {
+    color: #fff;
+    font-size: 16px !important; }

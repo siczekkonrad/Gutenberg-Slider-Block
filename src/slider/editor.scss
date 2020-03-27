@@ -1,0 +1,32 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-grf-gutenberg-adchitects-slider {
+	.slide {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 300px;
+		padding: 40px;
+
+		&Content {
+			&__title {
+				color: #fff;
+				font-size: 24px !important;
+				margin-bottom: 20px !important;
+			}
+			&__subtitle {
+				color: #fff;
+				font-size: 16px !important;
+			}
+		}
+	}
+}

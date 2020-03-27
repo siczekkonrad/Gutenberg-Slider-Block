@@ -1,0 +1,95 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+@import url(../src/assets/fonts/work-sans/stylesheet.css);
+@import url(../src/assets/fonts/eczar/stylesheet.css);
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.Slider .slide {
+  width: 100%;
+  height: 32vw;
+  position: relative;
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat; }
+  .Slider .slideContent {
+    position: absolute;
+    top: 45%;
+    left: 120px;
+    -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%); }
+    .Slider .slideContent__title {
+      font-size: 44px;
+      line-height: 58px;
+      color: #fff;
+      margin-bottom: 25px;
+      font-family: "eczarbold";
+      max-width: 340px; }
+    .Slider .slideContent__subtitle {
+      font-size: 18px;
+      line-height: 24px;
+      color: #fff;
+      margin-bottom: 20px;
+      font-family: "work_sanssemibold";
+      max-width: 340px; }
+
+.Slider .slick-dots {
+  bottom: 60px;
+  left: 186px;
+  max-width: 200px; }
+  .Slider .slick-dots li a {
+    display: inline-block;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    font-family: "eczarbold";
+    border-radius: 50%; }
+    .Slider .slick-dots li a:hover {
+      background-color: #fff;
+      color: grey; }
+  .Slider .slick-dots li.slick-active a {
+    background-color: #fff;
+    color: grey; }
+
+.Slider .slick-arrow {
+  z-index: 100;
+  color: #fff;
+  background-color: unset;
+  width: 60px;
+  height: 15px;
+  bottom: 57px;
+  -webkit-transition: scale 0.2s linear;
+  -o-transition: scale 0.2s linear;
+  transition: scale 0.2s linear; }
+  .Slider .slick-arrow:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-image: url("../src/assets/img/arrow.png");
+    opacity: 1; }
+
+.Slider .slick-prev {
+  top: unset;
+  left: 124px; }
+
+.Slider .slick-next {
+  top: unset;
+  right: unset;
+  left: 386px;
+  bottom: 64px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
